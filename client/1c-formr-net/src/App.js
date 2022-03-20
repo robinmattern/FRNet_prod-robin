@@ -12,7 +12,7 @@ function App() {
           <a href="https://github.com/8020data/" target="_blank" rel="noopener noreferrer">Repositories</a>
         </li>
         <li>
-          <a href="notready.js">My React App</a>
+          <a href="notready.html">My React App</a>
         </li>
         <li>
           <a href="notready.html">World Database</a>

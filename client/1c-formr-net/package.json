@@ -6,7 +6,7 @@
   "dependencies": {
   },
 
-  "homepage": "/formr-net",
+  "homepage": "/",
 
   "scripts": {
     "start": "..\\node_modules\\.bin\\react-scripts  start",
