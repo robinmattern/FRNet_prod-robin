@@ -2,7 +2,7 @@
 
     aHost=formr0-vultr-prod;
                              if [ "$1" != "" ]; then aHost=$1;    fi
-    aWebDir=/webs/FRApps;    if [ "$2" != "" ]; then aWebDir=$2=; fi
+    aWebDir=/webs/FormR-net; if [ "$2" != "" ]; then aWebDir=$2=; fi
     aBuild=build;            if [ "$3" != "" ]; then aBuild=$3;   fi
 
  if [ "${aHost}" == "" ]; then
