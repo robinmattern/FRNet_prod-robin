@@ -1,6 +1,5 @@
 /* Basic Blocks Custom App */
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
 
 /*-----------------------------------------
 :root selector for variables
@@ -23,7 +22,7 @@
     --Footer_hover-color: blue;
     --FooterList-font-size: .9rem;  
     
-    --GlobalFontFamily: "Roboto Slab", "Frank+Ruhl+Libre:wght@700&display=swap";
+    --GlobalFontFamily: "Frank+Ruhl+Libre", "Frank+Ruhl+Libre:wght@700&display=swap";
 } 
 
 
@@ -241,7 +240,7 @@ The .Section1ImageText::first-letter properties
 The .Section1Paragraph properites
 ------------------------------------------*/
 .Section1Paragraph {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Frank+Ruhl+Libre", sans-serif;
   margin-top: 0px;
   font-size: 1.3rem;
   color: var(--Section1Paragraph-font-color); 
@@ -281,7 +280,7 @@ The .Section2 h2 properites
 The .Section2Paragraph properites
 ------------------------------------------*/
 .Section2Paragraph {
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Frank+Ruhl+Libre", sans-serif;
     margin-top: 0px;
     font-size: 1.3rem;
     color: var(--Section2Paragraph-font-color); 
