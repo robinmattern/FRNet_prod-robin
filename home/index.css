@@ -270,9 +270,11 @@ The .Section2 properites
 /*-----------------------------------------
 The .Section2 h2 properites
 ------------------------------------------*/
-.Section2 h2 {
-    font-size: 1rem;
-    padding: 5px;
+.Section2-h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: lightgray;
+  text-shadow: 1px 1px 3px #000000;
 }
 /* END S2-1 .Section2 h2==================*/
 
@@ -283,7 +285,6 @@ The .Section2Paragraph properites
 .Section2Paragraph {
     font-family: var(--GlobalFontFamily);
     margin-top: 0px;
-    font-size: 1.3rem;
     font-weight: bolder;
     padding-top: 0rem;
     padding: 0px 150px 0px 30px;
