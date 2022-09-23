@@ -31,9 +31,8 @@
 The <html> tag properites (unchanged)
 ------------------------------------------*/
 html {
-    background: whitesmoke;
-    height: 100%;
-    text-align: center;
+  height: 100%;
+  width: auto;
 }
 
 
@@ -41,25 +40,16 @@ html {
 The body properites
 ------------------------------------------*/
 body {
-    background: whitesmoke;
     height: 100%;
-    width: 100%;
-    margin: 0;
     font-family: var(--GlobalFontFamily);
+    text-align: left;
 }
-
 
 /*-----------------------------------------
-The <h2> tag properties
--------------------------------------------*/
-h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-}
-
+The .Body-Custom properites
+------------------------------------------*/
+.Body-Custom {
+ }
 
 /*-----------------------------------------
 The .Header properites
@@ -221,33 +211,32 @@ The .Section1 properites
 /*-----------------------------------------
 The .Section1ImageText properties
 ------------------------------------------*/
-.Section1ImageText {
+.Section1Title {
     font-size: 3rem;
     font-weight: bolder;
     color: lightgray;
     text-shadow: 1px 1px 3px #000000;
-    padding: 40px 450px 20px 0px;
-}
+    text-align: left; 
+    padding-left: 4rem; 
+  }
 
 /*-----------------------------------------
 The .Section1ImageText::first-letter properties
 ------------------------------------------*/
-.Section1ImageText::first-letter {
+.Section1Title::first-letter {
     font-size: 150%;
-    color: whitesmokecornflowerblue;
 }
 
 /*-----------------------------------------
 The .Section1Paragraph properites
 ------------------------------------------*/
 .Section1Paragraph {
-  font-family: var(--GlobalFontFamily);
   margin-top: 0px;
   font-size: 1.3rem;
-  color: var(--Section1Paragraph-font-color); 
   font-weight: bolder;
-  padding-top: 0rem;
+  padding-top: 1rem;
   padding: 50px 150px 20px 30px;
+  color: var(--Section1Paragraph-font-color); 
 }
 
 /* S1-1 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -270,12 +259,15 @@ The .Section2 properites
 /*-----------------------------------------
 The .Section2 h2 properites
 ------------------------------------------*/
-.Section2-h2 {
-  font-size: 2rem;
+.Section2Title {
+  font-size: 2.2rem;
   font-weight: bolder;
-  color: lightgray;
   text-shadow: 1px 1px 3px #000000;
-}
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px #000000;
+  text-align: left; 
+  padding-left: 4rem; 
+  }
 /* END S2-1 .Section2 h2==================*/
 
 
@@ -283,23 +275,15 @@ The .Section2 h2 properites
 The .Section2Paragraph properites
 ------------------------------------------*/
 .Section2Paragraph {
-    font-family: var(--GlobalFontFamily);
     margin-top: 0px;
+    font-size: 1.3rem;
     font-weight: bolder;
-    padding-top: 0rem;
-    padding: 0px 150px 0px 30px;
-}
+    padding: 5px 120px 10px 30px;
+  }
 
 /*-----------------------------------------
 The .Section2Paragraph::firstLetter/line properites
 ------------------------------------------*/
-.Section2Paragraph::first-line {
-  font-size: 125%;
-}
-  
-.Section2Paragraph::first-letter {
-font-size: 150%;
-}
 /* S2-2 END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
@@ -376,18 +360,16 @@ The @media MAX-width query properties
   .HeaderLogo {
       font-size: 1rem;
     }    
-  .Section1ImageText {
+  .Section1Title {
     font-size: 1.5rem;
     padding: 80px 100px 20px 0px;
-  }
-  .Section1 h2 {
-    font-size: 1.7rem;
   }
   .Section1Paragraph {
     font-size: 75%;
   }
-  .Section2 h2 {
-    font-size: 1.7rem;
+  .Section2Title {
+    font-size: 1.5rem;
+    padding: 80px 100px 20px 0px;
   }
   .Section2Paragraph {
     font-size: 75%;
