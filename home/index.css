@@ -26,30 +26,19 @@
     --GlobalFontFamily: "Frank+Ruhl+Libre";
 } 
 
+* {                   /* reset all style */
+    box-sizing          :  border-box;
+    padding             :  0;
+    margin              :  0;
+    font-family         :  var(--GlobalFontFamily);
+    }
 
-/*-----------------------------------------
-The <html> tag properites (unchanged)
-------------------------------------------*/
-html {
-  height: 100%;
-  width: auto;
-}
-
-
-/*-----------------------------------------
-The body properites
-------------------------------------------*/
-body {
-    height: 100%;
-    font-family: var(--GlobalFontFamily);
-    text-align: left;
-}
-
-/*-----------------------------------------
-The .Body-Custom properites
-------------------------------------------*/
-.Body-Custom {
- }
+.container {            /* custom element style */
+    padding             :  0;
+    margin              :  0;
+    width               :  100%;
+    height              :  100vh;
+    } 
 
 /*-----------------------------------------
 The .Header properites
