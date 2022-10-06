@@ -1,6 +1,6 @@
 /* Basic Blocks Custom App */
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
-@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+/* @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre'); */
+/* @import url('/font-awesome-4.6.3/css/font-awesome.min.css'); */
 
 /*-----------------------------------------
 :root selector for variables
@@ -13,7 +13,7 @@
     --HeaderList-font-size: 1.1rem;
   
     --Section1_background-color: cornflowerblue;
-    --Section1_background-image: url( 'assets/images/monaco-blue-soft-1.jpg' );
+    --Section1_background-image: url( 'assets/images/monaco-blue-soft-1.jpg' );  
     --Section1Paragraph-font-color: whitesmoke;  
   
     --Section2-font-color: darkblue;  
