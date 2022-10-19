@@ -1,6 +1,7 @@
+
 /* Basic Blocks Custom App */
-/* @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre'); */
-/* @import url('/font-awesome-4.6.3/css/font-awesome.min.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre');
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
 
 /*-----------------------------------------
 :root selector for variables
@@ -9,17 +10,18 @@
     --Header_background-color: whitesmoke; 
     --Header_hover-color:blue;
     --HeaderLogo-image: url( 'assets/images/formR-icon.jpg' );
-    --HeaderLogo_margin: 0px 0 0 50px;
+    --HeaderLogo_margin: 0px 0px 0px 50px;
     --HeaderList-font-size: 1.1rem;
   
     --Section1_background-color: cornflowerblue;
-    --Section1_background-image: url( 'assets/images/monaco-blue-soft-1.jpg' ); /* This image existed in Bruce's Repo */ 
+    --Section1_background-image: url( 'assets/images/monaco-blue-soft-1.jpg' );
     --Section1Paragraph-font-color: whitesmoke;  
   
     --Section2-font-color: darkblue;  
     --Section2_background-color: whitesmoke;
     --Section2Paragraph-font-color: darkblue;  
-  
+    --Section2Paragraph_hover-color: blue;
+
     --Footer_background-color:whitesmoke; 
     --Footer_hover-color: blue;
     --FooterListFontSize: .9rem;  
@@ -53,7 +55,7 @@
     margin              :  0;
     width               :  100%;
     height              :  100vh;
-    } 
+  } 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -73,7 +75,8 @@ The .Header properites
     align-items: center;
 }
 /*------------------------------------------*/
-.HeaderNavBars {
+  
+.xxxHeaderNavBars {
     display: none;
     height: 24px;
     width: 24px;
@@ -86,11 +89,12 @@ The .Header properites
     margin-top: 0px;
   }
 /*------------------------------------------*/
-.HeaderNavBars:focus {
+.xxxHeaderNavBars:focus {
       outline: none;
   }
-/*------------------------------------------*/
-.HeaderLogo {
+ 
+  /*------------------------------------------*/
+.xxxHeaderLogo {
     width: 224px;
     height: 64px;
     margin-bottom: 0px;
@@ -139,6 +143,7 @@ The .HeaderNavList (horizontal menu) properites
 .HeaderNavListItemCTA a {
     color: white;
     background: blue ;
+    text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 8px;
 }
@@ -155,6 +160,13 @@ The @keyframes wiggle properties
      50% { transform: rotateZ(-10deg ); }
     100% { transform: rotateZ( 10deg ); }
   }
+/*------------------------------------------*/
+.HeaderNavListItemCTA a:hover,
+.HeaderNavListItemCTA a:active {
+    color: var(--Header_hover-color);
+    color: #C0C0C0;
+}
+
 /* Header Nav END ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -224,7 +236,7 @@ The .Section2 properites
   font-size: 2.5rem;
   font-weight: 600;
   color: blue;
-  text-shadow: 1px 1px 3px #000000;
+  text-shadow: 1px 1px 2px #000000;
   text-align: left; 
   padding-left: 1.6rem; 
 }
@@ -270,9 +282,10 @@ The .Section2 properites
     padding: 2px;
 }
 /*------------------------------------------*/
-  ul a:hover,
-  ul a:active {
-    color: var(--Footer_hover-color);
+.Section2Paragraph ul a:hover,
+.Section2Paragraph ul a:active {
+    color: var(--Section2Paragraph_hover-color);
+    font-size: 95%;
   }  
 /* Section2 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -286,7 +299,7 @@ The .Footer properites
     background: var(--Footer_background-color);
     width: 100%; 
     /*top: 10%;  /*Removed in place of the bottom property*/
-    border-top: 1px solid black;
+    border-top: 1px solid darkgray;
     bottom: 0;
     position: fixed;
     z-index: 99;
@@ -321,14 +334,16 @@ The .Footer properites
 
 /* Responsive Code */  
 /*The @media MIN-width query properties
-***** EXTRA LARGE
+***** About 75% of my Mac book 15" screen on chrome
 =========================================*/
 @media only screen and (min-width: 1200px) {
 
   /*@media (max-width: 1000px) {*/
-    /*.Section1 {
-      background-color: green;
-    }*/
+    /*
+    .Section1 {
+      background-color: lightskyblue;
+    }
+    */
     .Section1Paragraph {
       font-size: 125%;
     } 
@@ -344,49 +359,76 @@ The @media MAX-width query properties
 @media only screen and (max-width: 860px) {
 
 /*@media (max-width: 760px) {*/
-  /*.Section1 {
-    background-color: purple;
-  }*/ 
+
+  .Header {
+    height: 80px;
+  } 
   .HeaderNavList {
-      display: none;
+    display: none;
   }
-  .HeaderNavBars {
-      display: flex;
+  .MenuWrap {
+    display: flex;
   }
-  .HeaderLogo {
-      font-size: 1rem;
-      margin-left: 45px;
-  }   
-  .Section1Title {
-    font-size: 2rem;
+  /*
+  .MenuWrap .Menu > div {
+    /*move menu around*/
+/*      justify-content: left; /*was center*/
+/*      padding-left: 210px; /*was deleted*/
+/*      margin-top: -210px; /*was deleted*/
+    /*end of move around*/
+/*  }*/
+  
+  .Logo {
+    padding-left: 2.8rem;
+  }
+  .Section1 {
+    /*background-color: purple;*/
+    border: 1px solid blue;
+    height: 30%;    
+    top: 80px;
+  }  
+   .Section1Title {
+    font-size: 1.5rem;
     padding: 5px 10px 0px 20px;
+    text-align: center;
   }
   .Section1Paragraph {
-    font-size: 105%;
+    font-size: 120%;
   }
+  .Section2 {
+    height: 70%; 
+  }  
   .Section2Title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 2px #000000;
     padding: 5px 10px 0px 22px;
+    text-align: center;
+  }
+  .Section2Paragraph ol {
+    font-size: 125%;
   }
   .Section2Paragraph ul {
-    font-size: 110%;
+    font-size: 100%;
     margin: 5px 0px 10px 10px;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;  
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;  
   }
   .Section2Paragraph li {
-    font-size: 90%;
+    font-size: 80%;
   }
   .Section2Paragraph a {
-    font-size: 90%;
+    font-size: 100%;
     font-weight: 600;
     margin: 8px 0;
     padding: 2px;
   }
-  .FooterNavListItem a {
-    font-size: 95%;
+  .Section2Paragraph ul a:hover,
+  .Section2Paragraph ul a:active {
+    font-size: 110%;
+  } 
+  .Footer {
+    display: none;
   }
 }
 
@@ -398,29 +440,41 @@ The @media MIN-width query properties
 IPHONE *****
 =========================================*/
 @media only screen and (max-width: 420px) {
-/*@media (min-width: 420px) {*/
-/*  .Section1 {
-    background-color: pink;
-}*/
-  .HeaderNavList {
+/*@media (min-width: 400px) {*/
+.Header {
+   height: 75px;
+}
+.HeaderNavList {
     display: none;
 }
-.HeaderNavBars {
+.MenuWrap {
     display: flex;
 }
-  .HeaderLogo {
-    font-size: 1rem;
-    margin-left: 45px;
+/*
+.MenuWrap .Menu > div {
+  /*move menu around*/
+/*    justify-content: left; /*was center*/
+/*    padding-left: 90px; /*was deleted*/
+/*    margin-top: -80px; /*was deleted*/
+  /*end of move around*/
+/*}*/
+.Logo {
+  padding-left: 2.8rem;
+}
+.Section1 {
+  /*background-color: pink;*/
+  border: 1px solid blue;
+  height: 35%;
 }
 .Section1Title {
   font-size: 120%;
   text-align: center;
 }
 .Section1Paragraph {
-  font-size: 85%;
+  font-size: 75%;
 }
 .Section2 {
-  height: 60%; 
+  height: 65%; 
 }
 .Section2Title {
   font-size: 120%;
@@ -428,13 +482,15 @@ IPHONE *****
   text-shadow: 1px 1px 1px #000000;
 }
 .Section2Paragraph {
-  font-size: 0%;
+  font-size: 75%;
   padding-left: 15px;
 }
 .Section2Paragraph ul {
   margin: 0px 0px 5px -10px;
   font-size: 90%;
-  columns: 2;
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
   column-rule: none;
   border-bottom: none;
 }
@@ -448,16 +504,13 @@ IPHONE *****
   margin: px 0;
   padding: 2px;      
 }
-.Footer {
-  position: sticky;
-  bottom: 0;
-  margin-top: 30px;
-  border-top: 0px solid var(--Footer_background-color);
-  align-items: baseline;
-}      
-.FooterNavListItem a {
-  font-size: 70%;
+.Section2Paragraph ul a:hover,
+.Section2Paragraph ul a:active {
+  font-size: 110%;
 }
+.Footer {
+   display: none;
+} 
 }
 
 /* END BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
