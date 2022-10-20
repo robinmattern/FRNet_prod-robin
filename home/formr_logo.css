@@ -11,17 +11,17 @@
     --FormRFontColor1: cornflowerblue;
     --FormRFontColor2: blue;
     --FormRFontWeight: 900;
-    --FormRLetterSpacing: -6px;
-    --FormRFontSizeFull: 5rem;
-    --FormRFontSize420: 3.4rem;
-    --FormRFontSize760: 4.5rem;
+    --FormRLetterSpacing: -1px;
+    --FormRFontSize-Full: 5rem;
+    --FormRFontSize-420: 3.4rem;
+    --FormRFontSize-760: 4.5rem;
 
 } 
 /*=========================================*/
 /*=========================================*/
 .FormRText1 { /*Roboto Slab*/
     font-family: var(--LogoFontFamily);
-    font-size: var(--FormRFontSizeFull);
+    font-size: var(--FormRFontSize-Full);
     font-weight: var(--FormRFontWeight);
     color: var(--FormRFontColor1);
     letter-spacing: var(--FormRLetterSpacing);
@@ -31,7 +31,7 @@
 
 .FormRText2 { /*Roboto Slab*/
     font-family: var(--LogoFontFamily);
-    font-size: var(--FormRFontSizeFull);
+    font-size: var(--FormRFontSize-Full);
     font-weight: var(--FormRFontWeight);
     color: var(--FormRFontColor2);
     letter-spacing: var(--FormRLetterSpacing);
@@ -50,12 +50,12 @@ The @media MAX-width (760px) query properties
     }
 
     .FormRText1 { /*Frank Ruhl Libre*/
-        font-size: var(--FormRFontSize760);
+        font-size: var(--FormRFontSize-760);
         text-shadow: 2px 2px 2px black;
     }
     
     .FormRText2 { /*Frank Ruhl Libre*/
-        font-size: var(--FormRFontSize760);
+        font-size: var(--FormRFontSize-760);
         text-shadow: 2px 2px 2px black;
     }
   }
@@ -71,12 +71,12 @@ The @media MAX-width (420px) query properties
     }
 
     .FormRText1 { /*Frank Ruhl Libre*/
-        font-size: var(--FormRFontSize420);
+        font-size: var(--FormRFontSize-420);
         text-shadow: 2px 2px 2px black;
     }
     
     .FormRText2 { /*Frank Ruhl Libre*/
-        font-size: var(--FormRFontSize420);
+        font-size: var(--FormRFontSize-420);
         text-shadow: 2px 2px 2px black;
     }  
 }

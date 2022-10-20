@@ -55,7 +55,7 @@
     margin              :  0;
     width               :  100%;
     height              :  100vh;
-    } 
+  } 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -369,13 +369,15 @@ The @media MAX-width query properties
   .MenuWrap {
     display: flex;
   }
+  /*
   .MenuWrap .Menu > div {
     /*move menu around*/
-      justify-content: left; /*was center*/
-      padding-left: 140px; /*was deleted*/
-      margin-top: -310px; /*was deleted*/
+/*      justify-content: left; /*was center*/
+/*      padding-left: 210px; /*was deleted*/
+/*      margin-top: -210px; /*was deleted*/
     /*end of move around*/
-    }
+/*  }*/
+  
   .Logo {
     padding-left: 2.8rem;
   }
@@ -391,7 +393,7 @@ The @media MAX-width query properties
     text-align: center;
   }
   .Section1Paragraph {
-    font-size: 95%;
+    font-size: 120%;
   }
   .Section2 {
     height: 70%; 
@@ -448,13 +450,14 @@ IPHONE *****
 .MenuWrap {
     display: flex;
 }
+/*
 .MenuWrap .Menu > div {
-/*move menu around*/
-  justify-content: left; /*was center*/
-  padding-left: 90px; /*was deleted*/
-  margin-top: -80px; /*was deleted*/
-/*end of move around*/
-}
+  /*move menu around*/
+/*    justify-content: left; /*was center*/
+/*    padding-left: 90px; /*was deleted*/
+/*    margin-top: -80px; /*was deleted*/
+  /*end of move around*/
+/*}*/
 .Logo {
   padding-left: 2.8rem;
 }
