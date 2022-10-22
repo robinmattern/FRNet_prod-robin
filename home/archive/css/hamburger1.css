@@ -3,8 +3,8 @@
   --Primary-color: whitesmoke;
   --Hamburger-color: blue;
   /*--overlay-color: rgba(24, 39, 51 , 0.85);*/ /*brads orig color*/
-  --Overlay-color: rgba(100, 149, 237, 0.5);  /*cornflower blue*/
   --Overlay-color: rgba(245, 245, 245, .0); /*whitesmoke */
+  --Overlay-color: rgba(100, 149, 237, 0.5);  /*cornflower blue*/
   --MenuBackground-color: whitesmoke;
   --MenuBackground-opacity: 1;
   --Menu-speed: 2s;
@@ -90,8 +90,10 @@
 }
 /* Rotate On Hover When Checked */
 .MenuWrap .Toggler:checked:hover + .Hamburger > div {
-  transform: rotate(1305deg); /*was 225deg*/
-  transition-duration: 5s; /*Not needed*/
+  transform: rotate(225deg); /*was 225deg*/
+  /*transform: rotate(1305deg); /*was 225deg*/
+  transition-duration: 0.5s; /*Not needed-was 5s*/
+
 }
 /*END Toggler animation*/
 /*--------------------------------*/
@@ -132,9 +134,10 @@
   flex: none;
   align-items: center;
 /*move menu around*/
-  justify-content: left; /*was center*/
-  padding-left: 200px; /*was deleted*/
-  margin-top: -290px; /*was deleted*/
+  justify-content: center; /*left for iphone look*/
+/*padding-left: 200px; /*was deleted*/
+/*margin-top: -290px; /*was deleted*/
+
 /*end of move around*/
   transform: scale(0);
   transition: all var(--Menu-speed) ease;
