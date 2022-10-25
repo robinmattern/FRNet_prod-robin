@@ -183,7 +183,8 @@ The .Section1 properites
     color: lightgray;
     text-shadow: 1px 1px 3px #000000;
     text-align: left; 
-    padding-left: 1.3rem; 
+    padding-left: 1.3rem;
+    padding: .7rem 0px 0px 1.3rem 
   }
 /*------------------------------------------*/
 .Section1Title::first-letter {
@@ -192,7 +193,7 @@ The .Section1 properites
 }
 /*------------------------------------------*/
 .Section1Paragraph {
-  margin: 10px 20px 0px 40px;
+  margin: 0px 20px 0px 40px;
   font-size: 1.1rem;
 }
 /* Section-1 END ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -234,7 +235,8 @@ The .Section2 properites
 /*------------------------------------------*/
 .Section2Paragraph ul {
     list-style-type: none;
-    margin: 5px 0px 5px 10px;
+    margin: 0px 0px 5px 10px;
+    padding-bottom: 6px;
     font-size: .9rem;
     columns: 3;
     -webkit-columns: 3;
